@@ -1,3 +1,66 @@
-body {
-    color: #999;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button,
+  div {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  button, input {
+    font-size: inherit;
+    color: inherit;
+    background-color: #fff;
+  }
+  
+  button {
+      cursor: pointer;
+  }
+  
+  input:focus, input:active,
+  button:focus, button:active,
+  a:focus-visible {
+    outline: none;
+  }
+  
+  ul, ol {
+    list-style-type: none;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  body {
+    padding: 50px;
+    background-color: lightgrey;
+  }
+  
+  .visually-hidden {
+    position: fixed;
+    transform: scale(0);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .container {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  @media (max-width: 800px) {
+    .container {
+      width: 100%;
+    }
+  }

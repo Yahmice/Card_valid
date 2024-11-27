@@ -1,12 +1,20 @@
-const path = require("path");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require ('path')
+const HtmlWebPackPlugin = require ("html-webpack-plugin");
+const MiniCssExtractPlugin = require ("mini-css-extract-plugin");
 
 module.exports = {
+  mode: 'none',
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    port: 9000,
+    hot: true,
+    open: true
+  },
   target: "web",
   output: {
-    path: path.resolve(__dirname, "dist"),
-    publicPath: "",
+    clean: true,
   },
   module: {
     rules: [

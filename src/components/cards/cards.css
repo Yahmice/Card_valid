@@ -1,0 +1,25 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  
+    margin-bottom: 20px;
+  }
+  
+  .cards__item {
+    width: 85px;
+  }
+  
+  .cards__img {
+    width: 100%;
+  }
+  
+  .has-opacity {
+    opacity: 0.2;
+  }
+  
+  @media (max-width: 800px) {
+    .cards {
+      flex-wrap: wrap;
+    }
+  }

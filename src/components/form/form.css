@@ -1,0 +1,68 @@
+.form {
+    position: relative;
+  
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  
+    margin-bottom: 40px;
+  }
+  
+  .form__input {
+    width: calc(100% - 160px - 20px);
+    padding: 20px;
+  
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .form__input:focus {
+    outline: 2px solid rgb(171, 171, 254);
+  }
+  
+  .form__input_valid {
+    background-color: rgb(125, 231, 125);
+  }
+  
+  .form__input_invalid {
+    background-color: rgb(249, 166, 166);
+  }
+  
+  .form__tooltip {
+    position: absolute;
+    left: 0;
+    top: 62px;
+  
+    padding: 5px;
+  
+    color: red;
+  }
+  
+  .valid {
+    color: black;
+  }
+  
+  .form__button {
+    width: 160px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+  
+    background-color: #5cb85c;
+  }
+  
+  .form__button:focus {
+    background-color: #267e26;
+    color: #fff;
+  }
+  
+  @media (max-width: 570px) {
+    .form {
+      flex-direction: column;
+      gap: 46px;
+    }
+  
+    .form__input {
+      width: 100%;
+    }
+  }
